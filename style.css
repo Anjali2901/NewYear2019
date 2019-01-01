@@ -1,0 +1,28 @@
+body {
+  background:url('https://images.unsplash.com/photo-1537470284582-8da71000386c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+   background-repeat: no-repeat;
+  background-size: 1400px 500px;
+}
+h1 {
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 9vw;
+	width: 90vw;
+	margin-top: calc(45vh - 5vw);
+	text-align: center;
+	background: linear-gradient(
+		55deg,
+		hsl(0, 55%, 20%) 10%,
+		hsl(0, 95%, 50%) 100%
+	);
+	text-shadow: 0.5px -0.6vw #fff4;
+	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+   	animation: 7s newYear linear infinite,
+   	2s Happy linear alternate infinite;
+}
+@keyframes newYear {
+	100% { background-position: 100vw 0px; }
+}
+@keyframes Happy {
+	100% { transform: scale(1.2);}
+}
